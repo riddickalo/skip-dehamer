@@ -10,7 +10,7 @@
 ```
 
 ## TODO
-- [ ] Release pre-trained model
+- [x] Release pre-trained model
 - [x] Release code
 - [ ] Submit paper
 - [x] Build GitHub repository
@@ -18,3 +18,28 @@
 
 ## Network Architecture
 ![image](./poster/Network%20overview.png)
+
+## Preparation
+### Dependencies
+- python 3.10.12
+- pytorch 2.2.2 + cuda 12.2
+- pipenv >= v2023.9.8
+
+### Set Environment
+```shell
+# Install necessary packages
+pip3 install pipenv pyenv
+
+# Initialize a virtualenv and install dependencies from Pipfile
+pipenv install          
+```
+
+## Run the code
+You can modify configs in test.sh
+```bash
+# cd proj dir
+cd skipdehamer
+
+# testing
+./run.sh --test
+```

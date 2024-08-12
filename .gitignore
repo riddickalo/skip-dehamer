@@ -13,6 +13,7 @@
 Pipfile.lock
 
 # code
+monitor.sh
 train.sh
 train.py
 
