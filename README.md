@@ -10,39 +10,11 @@
 ```
 
 ## TODO
-- [x] Release pre-trained model
+- [ ] Release pre-trained model
 - [x] Release code
-- [x] Submit paper
+- [ ] Submit paper
 - [x] Build GitHub repository
 
 
 ## Network Architecture
 ![image](./poster/Network%20overview.png)
-
-## Preparation
-### Dependencies
-- python 3.10.12
-- pytorch 2.2.2 + cuda 12.2
-- pipenv >= v2023.9.8
-
-### Install envrionment
-Install virtualenv management package (pyenv is optional)
-```shell
-pip3 install pipenv pyenv
-```
-Install all packages
-```shell
-pipenv install          # from Pipfile
-# or
-pipenv sync             # from Pipfile.lock, it's safer
-```
-
-## Run
-You can modify configs in train.sh or test.sh
-```bash
-# cd proj dir
-cd skipdehamer
-
-# testing
-./run.sh --test
-```
