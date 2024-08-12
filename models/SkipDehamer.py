@@ -22,8 +22,6 @@ class SkipDehamer(nn.Module):
         if args.model_size == 'SkipDehamer_light':
             dims = [24, 48, 96, 48, 24] 
             is_lightweight = True
-        elif args.model_size == 'SkipDehamer_s':
-            dims = [36, 72, 144, 72, 36]    
         else:
             dims = [48, 96, 192, 96, 48] 
         
@@ -94,9 +92,6 @@ class SkipDehamer(nn.Module):
         else:
             feat = self.forward_flops(rgb)  
         
-        # K, B = torch.split(feat, (1, 3), dim=1)     # soft reconstruction
-        # rgb = K * rgb - B + rgb
-        # rgb = rgb[:, :, :H, :W]
         return feat + rgb
     
     def infer(self, rgb, mc_feats) -> tuple:
