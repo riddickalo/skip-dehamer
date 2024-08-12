@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://download.pytorch.org/whl/cu121"
+verify_ssl = false
+name = "pytorch"
+
+[packages]
+torch = {version = "==2.2.2", index = "pytorch"}
+torchvision = {version = "==0.17.2", index = "pytorch"}
+opencv-python = "==4.8.1.78"
+einops = "==0.7.0"
+timm = "==0.9.12"
+tqdm = "~=4.66"
+scikit-image = "~=0.22"
+matplotlib = "~=3.8"
+pytorch-msssim = "==1.0.0"
+pillow = "~=10.3"
+ptflops = "==0.7.3"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
+python_full_version = "3.10.12"

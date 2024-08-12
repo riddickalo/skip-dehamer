@@ -14,3 +14,14 @@
 - [ ] Release code
 - [ ] Submit paper
 - [x] Build GitHub repository
+
+
+## Run
+You can modify configs in train.sh or test.sh
+```bash
+# cd proj dir
+cd skipdehamer
+
+# testing
+./run.sh --test
+```
