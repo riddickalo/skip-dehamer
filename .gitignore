@@ -1,1 +1,22 @@
+# images
+.png
+.png
+.jpg
+.JPG
+.jpeg
+.JPEG
+
+# log
 *.txt
+*.out
+.env
+Pipfile.lock
+
+# code
+train.sh
+train.py
+
+checkpoints/20*
+data/t*
+proc_images
+thesis_demo
