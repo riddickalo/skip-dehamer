@@ -10,9 +10,9 @@
 ```
 
 ## TODO
-- [ ] Release pre-trained model
-- [ ] Release code
-- [ ] Submit paper
+- [x] Release pre-trained model
+- [x] Release code
+- [x] Submit paper
 - [x] Build GitHub repository
 
 
